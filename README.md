@@ -1,1 +1,1 @@
-# sequelize_intro
+ize seed:se# school-sequalize
