@@ -2,22 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Subjects</title>
+    <title>Teachers</title>
   </head>
   <body>
-    <center><h1>Subjects</h1></center>
+    <center><h1>List Teachers</h1></center>
     <div>
       <center>
       <table border="1">
         <tr>
           <th>Id</th>
-          <th>Subjects Name</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
           <th>Action</th>
         </tr>
         <% datas.forEach(d => { %>
         <tr>
         <td><%=d.id%></td>
-        <td><%=d.subject_name%></td>
+        <td><%=d.first_name%></td>
+        <td><%=d.lastname%></td>
+        <td><%=d.email%></td>
         <td><a href="/contacts/edit/<%= d.id %>"><button type="button" name="button">Edit</button></a></td>
         <td><a href="contacts/delete/<%= d.id %>"><button type="button" name="button">Delete</button></a></td>
       </tr>
@@ -25,6 +29,5 @@
       </table>
     </center>
     </div>
-
   </body>
 </html>
