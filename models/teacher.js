@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Teacher = sequelize.define('Teacher', {
     first_name: DataTypes.STRING,
-    lastname: DataTypes.STRING,
+    last_name: DataTypes.STRING,
     email: DataTypes.STRING
   }, {
     classMethods: {

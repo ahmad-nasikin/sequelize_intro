@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Update Subject</title>
+  </head>
+  <body>
+    <center><h1>Update Subject</h1></center>
+    <div>
+      <center>
+      <form action="/subjects/update/<%=data.id%>" method="post">
+        <input name="subject_name" value="<%= data.subject_name %>">
+        <center><button type="submit" name="button">Submit</button></center>
+      </form>
+      </center>
+    </div>
+  </body>
+</html>

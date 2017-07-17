@@ -27,7 +27,6 @@ router.post('/', function(req, res) {
 router.get('/update/:id', function(req, res) {
   model.Students.findById(req.params.id)
   .then(dataStudent => {
-    console.log(dataStudent);
     res.render('updatestudent', {data: dataStudent})
   })
 })
